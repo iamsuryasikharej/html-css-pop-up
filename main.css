@@ -1,0 +1,57 @@
+.modaldiv
+{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    border:2px solid red;
+    border-radius: 20px;
+    
+    z-index: 1;
+    background-color: white;
+    transition: 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(0);
+    width: 500px;
+    max-width: 80%;
+}
+.active-modal
+{
+    transform: translate(-50%, -50%) scale(1);
+}
+.modalheader
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.modaldiv p{
+
+    padding: 10px;
+}
+.cls_btn
+{
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    font-weight: 900;
+    
+}
+
+.overlay1
+{
+    position:fixed;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: 200ms ease-in-out;
+    background: rgb(0,0,0,.5);
+    pointer-events: none;
+    
+}
+.activate-overlay
+{
+    opacity: 1;
+    pointer-events: all;
+}
